@@ -1,0 +1,49 @@
+{
+  "settings": {
+    "cal_flights": 20,
+    "test_flights": 24,
+    "seconds": 28,
+    "lambda_value": 0.5,
+    "output": "results"
+  },
+  "scale_CA_RMSE_validation": {
+    "5": 0.1377964503999875,
+    "10": 0.14505142855759767,
+    "20": 0.19069501229334082
+  },
+  "calibration_flights": 20,
+  "test_flights": 24,
+  "training_regressor_stats": {
+    "5": {
+      "n": 2020,
+      "mean_target_clipped": 5.346975775807836
+    },
+    "10": {
+      "n": 2020,
+      "mean_target_clipped": 14.566639170539622
+    },
+    "20": {
+      "n": 2020,
+      "mean_target_clipped": 31.45559772966585
+    }
+  },
+  "threshold_v4_m": {
+    "low": 0.20545803606510163,
+    "high": 0.5584702789783478
+  },
+  "matched_mix": {
+    "mean_delta": -0.3004742161671714,
+    "ci95": [
+      -0.4774918327816292,
+      -0.17281611495357901
+    ]
+  },
+  "elapsed_s": 1.45,
+  "limits": [
+    "synthetic trajectories only",
+    "single pretrained LSTM seed per horizon",
+    "hand-defined utility lambda",
+    "no flight controller or real world navigation validation",
+    "hindsight oracle is noncausal diagnostic only"
+  ]
+}
