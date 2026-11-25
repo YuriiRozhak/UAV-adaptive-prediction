@@ -1,0 +1,32 @@
+{
+  "fixed_lambda": 5.0,
+  "test_flights_per_cohort": 12,
+  "regressor_seeds": [
+    11,
+    22,
+    33
+  ],
+  "pretrained_LSTM_seeds": 1,
+  "cohorts": [
+    "same_generator",
+    "shifted_generator",
+    "severe_shift"
+  ],
+  "train_regressor_seeds": "730000..730019",
+  "calibration_seeds": "720000..720007",
+  "test_seeds": "860000+,870000+,880000+",
+  "CA_scale_m": {
+    "5": 0.1377964503999875,
+    "10": 0.14505142855759767,
+    "20": 0.19069501229334082
+  },
+  "evaluation": "normalized position squared error + lambda*(1-h/20)",
+  "limits": [
+    "Only synthetic simulations, not real flight validation",
+    "3 regressor seeds do NOT represent 3 LSTM training seeds",
+    "Lambda=5 previously explored on v5, so pre-fixed only for this v6 experiment",
+    "Shifted trajectory generator is still simplified physics",
+    "Cohort bootstrap CI covers flights conditional on one pretrained LSTM model"
+  ],
+  "elapsed_sec": 1.82
+}
