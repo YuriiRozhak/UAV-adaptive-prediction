@@ -1,0 +1,20 @@
+{
+  "trained_model_source": "/mnt/data/uav_poc_v2/outputs",
+  "model_training_seed": 2026,
+  "thresholds_calibrated_on_v2_validation_m": {
+    "low": 0.20545803606510163,
+    "high": 0.5584702789783478
+  },
+  "independent_test_seed_scheme": "900000 + regime_index * 1000 + flight_index",
+  "test_flights_per_regime": 8,
+  "seconds": 28,
+  "issued_forecast_interval_s": 0.25,
+  "bootstraps": 600,
+  "limits": [
+    "Synthetic data only",
+    "Same trained models across all noise levels",
+    "No independent retraining-seed repeats",
+    "No realistic missing-GNSS inputs",
+    "Bootstrap CI reflects only held-out flight variation"
+  ]
+}
