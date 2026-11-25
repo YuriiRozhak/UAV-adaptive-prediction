@@ -1,0 +1,17 @@
+{
+  "CA_RMSE_validation_scales_m": {
+    "5": 0.1382458832215746,
+    "10": 0.1467587782587919,
+    "20": 0.19945621143790584
+  },
+  "validation_thresholds_m": {
+    "low": 0.20545803606510163,
+    "high": 0.5584702789783478
+  },
+  "penalty_definition": "normalized squared position error + lambda*(1 - horizon_steps/20)",
+  "comparison_caveat": "A priori research utility. Mean mixed-horizon raw MAE is not evidence of improvement.",
+  "test_generator": "experiment_v2.synth_flight",
+  "test_flights": 12,
+  "model_training": "pretrained POC v2 LSTM; one training seed; validation from v2 synthetic generator",
+  "adaptation": "past matured LSTM error EMA; no future information at decision time"
+}

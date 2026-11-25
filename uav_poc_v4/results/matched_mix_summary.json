@@ -1,0 +1,17 @@
+{
+  "n_flights": 12,
+  "shuffles_per_flight": 300,
+  "mean_adaptive_loss": 1.2608420323067207,
+  "mean_shuffled_loss": 1.2791925852742594,
+  "mean_adaptive_minus_shuffled": -0.018350552967538666,
+  "flight_bootstrap95": [
+    -0.13437027326405876,
+    0.058065284943703034
+  ],
+  "interpretation": "Negative delta suggests beneficial timing beyond selected horizon fractions. Post-hoc matched-mix comparator is NOT deployable.",
+  "validation_LSTM_RMSE_scales_m": {
+    "5": 0.17657957055204063,
+    "10": 0.4187485199666713,
+    "20": 0.8871908397846745
+  }
+}
